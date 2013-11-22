@@ -210,7 +210,7 @@ Similar to PHP functions
 ~~~twig
 {% import "forms.html.twig" as forms %}
 
-{{ forms.input('username') }}
+{{ forms.input("Username:", "username") }}
 ~~~
 
 ---
@@ -248,7 +248,7 @@ random, range, source, template_from_string
 # Extending Layouts
 `index.html.twig`
 ~~~twig
-{% extends "base.html" %}
+{% extends "base.html.twig" %}
 
 {% block title %}Index{% endblock %}
 
